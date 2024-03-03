@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>Sign-up-page</title>
-</head>
-<body>
-    <section class="section-1">
-        <div class="logo-banner">
-            <img src="assets/tevstark-high-resolution-logo-transparent.png" class="logo" alt="logo">
-            <h1>TevStark Enterprise</h1>
-        </div>
-        <footer>Photo by <a href="https://unsplash.com/@snapsbyclark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clark Van Der Beken</a> on <a href="https://unsplash.com/photos/looking-up-at-skyscrapers-from-the-ground-_fzSGU8AJqM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </footer>
-    </section>
-    <section class="section-2">
-        <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 
-        </div>
+    <title>Sign-up-page</title>
+  </head>
+  <body>
+    <section class="section-1">
+      <div class="logo-banner">
+        <img
+          src="assets/tevstark-high-resolution-logo-transparent.png"
+          class="logo"
+          alt="logo"
+        />
+        <h1>TevStark Enterprise</h1>
+      </div>
+      <footer>
+        Photo by
+        <a
+          href="https://unsplash.com/@snapsbyclark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Clark Van Der Beken</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/looking-up-at-skyscrapers-from-the-ground-_fzSGU8AJqM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </footer>
     </section>
-</body>
+
+    <section class="section-2">
+      <section class="call-to-action">
+        <h3>
+          This is not a real online service! You know you need something <br />
+          like this in your life to help you realize your deepest dreams. <br />
+          Sign up <em>now</em> to get started. <br />
+          <br />
+          You <em>know</em> you want to
+        </h3>
+      </section>
+
+      <section class="sign-up-form">
+        <form action="#" class="signup">
+          <h1>Let's do this!</h1>
+
+          <div class="names">
+            <label for="first-name">FIRST NAME</label><br>
+            <input type="text" id="first-name" />
+
+            <label for="last-name">LAST NAME</label><br><input type="text" id="last-name" />
+          </div>
+
+          <div class="email-number">
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@example.com"
+              required
+            />
+
+            <label for="number">PHONE NUMBER</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+              required
+            />
+          </div>
+
+          <div class="password">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+
+        </form>
+      </section>
+
+      <section class="create-account">
+        <button type="submit" id="submit-form">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </section>
+  </body>
 </html>
