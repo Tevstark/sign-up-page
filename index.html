@@ -44,53 +44,52 @@
 
       <section class="sign-up-form">
         <form action="#" class="signup">
-          <h1>Let's do this!</h1>
-
-          <div class="names">
-            <label for="first-name">FIRST NAME</label><br>
-            <input type="text" id="first-name" />
-
-            <label for="last-name">LAST NAME</label><br><input type="text" id="last-name" />
+          <div class="header">
+            <h1>Let's do this!</h1>
           </div>
-
-          <div class="email-number">
-            <label for="email">EMAIL</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="example@example.com"
-              required
-            />
-
-            <label for="number">PHONE NUMBER</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="123-456-7890"
-              required
-            />
+          <div class="input-groups">
+            <div class="input-group-1">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" />
+    
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@example.com"
+                  required
+                />
+    
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+    
+              <div class="input-group-2">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" />
+    
+                <label for="number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-456-7890"
+                  required
+                />
+    
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  required
+                />
+              </div>
           </div>
+          
 
-          <div class="password">
-            <label for="password">PASSWORD</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-            />
-
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              required
-            />
-          </div>
-
+          
         </form>
       </section>
 

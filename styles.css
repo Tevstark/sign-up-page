@@ -99,15 +99,31 @@ footer, footer > a {
     margin-right: 1em;
 }
 
+.input-groups {
+    display: flex;
+    gap: 2em;
+    margin: 1em;
+   
+}
+.input-group-1, .input-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
 .names , .email-number, .password{
     margin: 1em;
+}
+
+.header {
+    margin-top: 1em;
 }
 button#submit-form {
     background-color: #596D48;
     color: white;
     /* width: 8em; */
     /* height: 2em; */
-    border-radius: 0.2em;
+    border-radius: 0.4em;
     outline: 0;
     font-size: 0.9em;
     font-weight: 600;
@@ -120,4 +136,10 @@ button#submit-form {
     
     margin-left: 2em;
     margin-top: 2em;
+}
+
+label {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.7;
 }
