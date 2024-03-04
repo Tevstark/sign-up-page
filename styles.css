@@ -145,18 +145,31 @@ label {
     opacity: 0.7;
 }
 
-input, input:valid:focus{
+input{
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 0.3em;
 }
+/* 
+input:valid{
+    border: 1px solid #E5E7EB;
+}
 
+
+input#password:invalid, input#confirm-password:invalid {
+    border-color :1px solid red;
+} */
+
+
+.error-text {
+    color: red;
+    font-size: 0.6rem;
+    display: block;
+    margin-top: 0.1rem;
+}
 input:focus {
     outline: 0;
     border: 1px solid #5aaccc;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-input:invalid:focus {
-    border: 1px solid red
-}
