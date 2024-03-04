@@ -109,6 +109,7 @@ footer, footer > a {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    
 }
 
 .names , .email-number, .password{
@@ -140,6 +141,22 @@ button#submit-form {
 
 label {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.6em;
     opacity: 0.7;
+}
+
+input, input:valid:focus{
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 0.3em;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #5aaccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input:invalid:focus {
+    border: 1px solid red
 }
